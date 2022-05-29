@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "fa36f73e-3560-4f31-b93c-9c39e15bdb87",
+		"name": "ng_task_heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "month",
+							"value": "1",
+							"contentType": "",
+							"type": "text"
+						},
+						{
+							"key": "day",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ng-task-api.herokuapp.com/dates/",
+					"protocol": "https",
+					"host": [
+						"ng-task-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"dates",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-API-KEY",
+						"value": "django-insecure-=vv_7m2zizxkn-08n(q==99s-ei^h=yw3ue()iq%yz(_6o_x@b",
+						"type": "text"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "dupa",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ng-task-api.herokuapp.com/dates/2/",
+					"protocol": "https",
+					"host": [
+						"ng-task-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"dates",
+						"2",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "dupa",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Pop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ng-task-api.herokuapp.com/popular/",
+					"protocol": "https",
+					"host": [
+						"ng-task-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"popular",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ng-task-api.herokuapp.com/dates/",
+					"protocol": "https",
+					"host": [
+						"ng-task-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"dates",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

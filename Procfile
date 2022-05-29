@@ -1,0 +1,1 @@
+web: gunicorn ng_task.wsgi
