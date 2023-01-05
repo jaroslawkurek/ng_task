@@ -2,7 +2,7 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from . import services
+from . import utils
 from .models import Date
 from .serializers import DateDeleteSerializer, DateSerializer, PopularDateSerializer
 
@@ -44,6 +44,6 @@ class PopularApiView(APIView):
     """
 
     def get(self, format=None):
-        dates = services.get_popular_dates()
+        dates = utils.get_popular_dates()
         serializer = PopularDateSerializer(dates, many=True)
         return Response(serializer.data)
